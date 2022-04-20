@@ -1,12 +1,12 @@
-# Github Actions CICD setup steps.
-## for REACT App with Node.js and React Router. 
+# Github Actions CICD setup.
+## For REACT App with Node.js and React Router. 
 
 Steps and commands to setup Github Actions CICD workflow on a new repository.
 
 
-1. Create new repo from this template. 
+### 1. Create new repo from this template. 
 
-2. Clone Repo to computer and install. 
+### 2. Clone Repo to computer and install. 
 
     ```
     git clone repolink
@@ -15,25 +15,34 @@ Steps and commands to setup Github Actions CICD workflow on a new repository.
     npm i
     ```
 
-3. Change project Title and Description on index.html.
+### 3. Change project Title and Description on index.html.
 
-4. Change project name on root level package.json
+### 4. Change project name on root level package.json
 
-5. Push changes to git. 
+### 5. Push changes to git. 
 
-6. Create Ubunto Server and SSH into root level. 
+### 6. Create Ubunto Server and SSH into root level. 
 
-7. Run Update
+### 7. Run Update
     ```
     sudo apt update
     ```
 
-8. Install Node Js
+### 8. Install Node Js
     ```
     sudo apt install nodejs
     ```
 
-9.  
+    a. verify install
+    ```
+    node -v
+    ```
+### 9. Install NGINX
+
+    ```
+    npm install nginx
+    ```
+
 
 
 
