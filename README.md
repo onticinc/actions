@@ -60,10 +60,27 @@ Switch to new User.
     su username
 
 ## 10. Make New Site Folder
+Go to NGINX www folder.   
     
     cd /var/www/
-    sudo mkdir websitename
+
+Make new website folder.
     
+    sudo mkdir websitename
+
+Change Directory to New Folder. 
+
+    cd websitename
+
+## 11. Setup Runner on New Githup Repo
+
+In Repo Settings/Actions/MakeNewRunner
+
+Set Operating System to Linux Architectur X64.
+
+Copy and Paste commands in the folder you created in step 10.
+
+
 
 
 
