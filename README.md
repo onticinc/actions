@@ -45,8 +45,9 @@ Steps and commands to setup Github Actions CICD workflow on a new repository.
     sudo apt-get install ufw
     sudo ufw allow 'Nginx HTTP'
     ```
-    ** UFW = Uncomplicated Firewall
-    https://help.ubuntu.com/community/UFW
+
+** UFW = Uncomplicated Firewall
+https://help.ubuntu.com/community/UFW
 
 
 
