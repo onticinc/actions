@@ -9,26 +9,25 @@ Steps and commands to setup Github Actions CICD workflow on a new repository.
 ## 2. Clone Repo to computer and install. 
 
     ```
-    git clone repolink
-    ```
-    ```  
+    git clone 
     npm i
     ```
 
-## 3. Change project Title and Description on index.html.
+## 3. Update Site info 
 
-## 4. Change project name on root level package.json
+    1. Title and Description on index.html.
+    2. Project Name on Root level package.json
 
-## 5. Push changes to git. 
+## 4. Push changes to git. 
 
-## 6. Create Ubunto Server and SSH into root level. 
+## 5. Create Ubunto Server and SSH into root level. 
 
-## 7. Run Update
+## 6. Run Update
     ```
     sudo apt update
     ```
 
-## 8. Install Node Js
+## 7. Install Node Js
     ```
     sudo apt install nodejs
     ```
@@ -37,7 +36,7 @@ Steps and commands to setup Github Actions CICD workflow on a new repository.
     ```
     node -v
     ```
-## 9. Install NGINX
+## 8. Install NGINX
 
     ```
     sudo apt update
