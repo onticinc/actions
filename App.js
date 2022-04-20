@@ -1,8 +1,8 @@
 const express = require('express')
 const app = express();
 
-app.get('/blank', (req, res) => {
-  res.send('Empty Route')
+app.get('/names', (req, res) => {
+  res.send('John Doe')
 })
 
 app.listen(5000, () => {

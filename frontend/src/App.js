@@ -6,17 +6,20 @@ function App() {
   const [userName, setUsername] = useState('')
 
   useEffect(() => {
-    blankRoute()
+    getNames()
   }, [])
 
-  const blankRoute = async () => {
-    const response = await axios.get('/blank');
+  const getNames = async () => {
+    const response = await axios.get('/names');
     console.log(response);
-
+    setUsername(response.data)
   }
 
   return (
-    <h1>Front End</h1>
+    <div>
+      <h1>Front End</h1>
+      <h3>My name is {userName}</h3>
+    </div>
   );
 }
 
