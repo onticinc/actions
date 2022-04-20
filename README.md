@@ -40,13 +40,28 @@ use node -v to verify install.
     sudo apt install nginx
     sudo apt-get install ufw
     sudo ufw allow 'Nginx HTTP'
+    systemctl status nginx
     
 
 ** UFW = Uncomplicated Firewall
 https://help.ubuntu.com/community/UFW
 
 
-## 9. 
+## 9. Create non root level user
+
+    adduser username
+
+Set Sudo Privilages
+
+    sudo usermod -ag sudo username
+    
+Switch to new User.
+    su username
+
+## 10. Change directory
+    
+    cd /var/www/
+    sudo mkdir websitename
 
 
 
