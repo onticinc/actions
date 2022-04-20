@@ -31,15 +31,11 @@
 ## 7. Install Node Js
     
     sudo apt install nodejs
-   
-
-    a. verify install
-   
     node -v
-   
+
+use node -v to verify install.
 ## 8. Install NGINX
 
-   
     sudo apt update
     sudo apt install nginx
     sudo apt-get install ufw
@@ -50,6 +46,7 @@
 https://help.ubuntu.com/community/UFW
 
 
+## 9. 
 
 
 
