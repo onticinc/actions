@@ -60,7 +60,7 @@ Switch to new User.
     su username
 
 ## 10. Make New Site Folder
-Go to NGINX www folder.   
+Go to NGINX WWW folder.   
     
     cd /var/www/
 
@@ -78,7 +78,7 @@ In Repo Settings/Actions/MakeNewRunner
 
 Set Operating System to Linux Architectur X64.
 
-Copy and Paste commands in the folder you created in step 10.
+Copy and Paste runner commands in the folder you created in step 10. (You cannot do this step as a root user.)
 
 
 
