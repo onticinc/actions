@@ -12,7 +12,16 @@ Steps and commands to setup Github Actions CICD workflow on a new repository.
     ```
 3. Change project Title and Description on index.html.
 4. Change project name on root level package.json
-5. 
+5. Create Ubunto Server and SSH into root level. 
+6. Run Update
+    ```
+    sudo apt update
+    ```
+7. Install Node Js
+    ```
+    sudo apt install nodejs
+    ```
+8. 
 
 
 
