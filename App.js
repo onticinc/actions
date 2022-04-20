@@ -1,5 +1,14 @@
+const express = require('express')
+const app = express();
+
 import logo from './logo.svg';
 import './App.css';
+
+app.get('/blank', (req, res) => {
+  res.send('Blank Route')
+})
+
+app.listen(5000)
 
 function App() {
   return (

@@ -1,10 +1,15 @@
-# Github Actions CICD setup steps. 
-Use these steps and commands to setup Github Actions CICD workflow from blank repository.
+# Github Actions CICD setup steps for REACT App with Node.js and React Router. 
+Steps and commands to setup Github Actions CICD workflow on a new repository.
 
 
 1. Create new repo from this template. 
 2. Clone Repo to computer and install. 
-    - git clone "repo link" and npm i
+    ```
+    git clone repolink
+    ```
+    ```  
+    npm i
+    ```
 3. Change project Title and Description index.html
 4. 
 
