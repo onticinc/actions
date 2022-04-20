@@ -40,10 +40,13 @@ Steps and commands to setup Github Actions CICD workflow on a new repository.
 ### 9. Install NGINX
 
     ```
-    npm install nginx
+    sudo apt update
+    sudo apt install nginx
+    sudo apt-get install ufw
+    sudo ufw allow 'Nginx HTTP'
     ```
-
-
+    ** UFW = Uncomplicated Firewall
+    https://help.ubuntu.com/community/UFW
 
 
 
