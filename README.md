@@ -78,7 +78,7 @@ In Repo Settings/Actions/MakeNewRunner
 
 Set Operating System to Linux Architectur X64.
 
-Copy and Paste runner commands in the folder you created in step 10. (You cannot do this step as a root user.)
+Copy and Paste runner commands in the folder created in step 10. (You cannot do this step as a root user.)
 
 Skip first command ` mkdir actions-runner && cd actions-runner ` because we already created the website folder in step 10. 
 
@@ -88,6 +88,19 @@ Remove tar.gz file after extracted.
     
     sudo rm -r filename
 
+
+Run this command to allow user to "Create the Runner and start the configuration" 
+
+    sudo chmod -R 777 /var/www/websitename
+
+Paste and Rund Configuration command
+
+## 12. Configure Github Actions
+
+1. Hit enter for default group runner name. 
+2. Name Runner
+3. Press Enter to Skip Labels
+4. Press Enter to leave _work folder as default.
 
 
 
