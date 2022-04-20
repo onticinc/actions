@@ -10,8 +10,9 @@ Steps and commands to setup Github Actions CICD workflow on a new repository.
     ```  
     npm i
     ```
-3. Change project Title and Description index.html
-4. 
+3. Change project Title and Description on index.html.
+4. Change project name on root level package.json
+5. 
 
 
 
