@@ -1,8 +1,6 @@
 # Github Actions CICD setup.
 
-##### For REACT App with Node.js and React Router. 
-
-======
+#### For REACT App with Node.js and React Router. 
 
 
 ## 1. Create new repo from this template. 
@@ -101,6 +99,47 @@ Paste and Rund Configuration command
 2. Name Runner
 3. Press Enter to Skip Labels
 4. Press Enter to leave _work folder as default.
+
+## 13. Install and Start Runner
+
+    sudo ./svc.sh install
+    sudo ./svc.sh start
+
+## 14. Configure NGINX server.
+
+1. Navigate to sites-available folder.
+
+    cd /etc/nginx/sites-available/
+
+2. Edit Default File in Sites-Available folder. 
+
+    sudo nano default
+
+3. Comment out. 
+
+    listen 80 default_server;
+    listen [::]:80 default_server;
+
+4. Change link to website
+
+    root /var/www/websitename/_work/repo_name/repo_name/;
+
+5. Add domain and ip address to server_name.
+
+6. Update Location. Comment out # try_files $uri $uri/ =404. Paste code snippet in location.
+    ```
+    proxy_pass http://localhost:5000;
+    proxy_http_version 1.1;
+    proxy_set_header Upgrade $http_upgrade;
+    proxy_set_header Connection 'upgrade';
+    proxy_set_header Host $host;
+    proxy_cache_bypass $http_upgrade;
+
+    ```
+7. Exit and Save.
+
+## 15. 
+
 
 
 
