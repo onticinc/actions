@@ -112,22 +112,24 @@ Paste and Rund Configuration command
 
 1. Navigate to sites-available folder.
 
-    cd /etc/nginx/sites-available/
+        cd /etc/nginx/sites-available/
 
 2. Edit Default File in Sites-Available folder. 
 
-    sudo nano default
+        sudo nano default
 
 3. Comment out. 
 
-    listen 80 default_server;
-    listen [::]:80 default_server;
+        listen 80 default_server;
+        listen [::]:80 default_server;
 
 4. Change link to website
 
     root /var/www/websitename/_work/repo_name/repo_name/;
 
 5. Add domain and ip address to server_name.
+
+    server_name domainname.com ipaddress;
 
 6. Update Location. Comment out # try_files $uri $uri/ =404. Paste code snippet in location.
     ```
@@ -141,8 +143,20 @@ Paste and Rund Configuration command
     ```
 7. Exit and Save.
 
-## 15. 
+## 15. Restart NGINX
 
+    sudo service nginx restart
+
+## 16. Setup Restart without needing sudo. 
+
+Run Command
+
+    sudo visudo -f /etc/sudoers.d/username
+
+Paste into nano editor. 
+```
+    username ALL=(ALL) NOPASSWD: /usr/sbin/service nginx start./usr/sbin/service nginx stop./usr/sbin/service nginx restart
+```
 
 
 
