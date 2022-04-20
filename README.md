@@ -147,17 +147,28 @@ Paste and Rund Configuration command
 
     sudo service nginx restart
 
-## 16. Setup Restart without needing sudo. 
+## 16. Setup Restart on folder without needing sudo. 
 
 Run Command
 
     sudo visudo -f /etc/sudoers.d/username
 
 Paste into nano editor. 
-```
-    username ALL=(ALL) NOPASSWD: /usr/sbin/service nginx start./usr/sbin/service nginx stop./usr/sbin/service nginx restart
-```
 
+
+    username ALL=(ALL) NOPASSWD: /usr/sbin/service nginx start./usr/sbin/service nginx stop./usr/sbin/service nginx restart
+
+Save and Exit nano editor.
+
+Reboot Server
+
+    sudo reboot
+
+
+
+
+
+## 17. 
 
 
 
