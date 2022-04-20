@@ -80,6 +80,15 @@ Set Operating System to Linux Architectur X64.
 
 Copy and Paste runner commands in the folder you created in step 10. (You cannot do this step as a root user.)
 
+Skip first command ` mkdir actions-runner && cd actions-runner ` because we already created the website folder in step 10. 
+
+Download Runner Package and Extract. 
+
+Remove tar.gz file after extracted. 
+    
+    sudo rm -r filename
+
+
 
 
 
