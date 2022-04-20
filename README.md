@@ -94,7 +94,7 @@ Run this command to allow user to "Create the Runner and start the configuration
 
     sudo chmod -R 777 /var/www/websitename
 
-Paste and Rund Configuration command
+Paste and Run Configuration command
 
 ## 12. Configure Github Actions
 
@@ -147,7 +147,7 @@ Paste and Rund Configuration command
 
     sudo service nginx restart
 
-## 16. Setup Restart on folder without needing sudo. 
+## 16. Setup Restart for site folder without needing sudo. 
 
 Run Command
 
