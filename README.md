@@ -1,7 +1,6 @@
 # Github Actions CICD setup.
 
-======
-### For REACT App with Node.js and React Router. 
+##### For REACT App with Node.js and React Router. 
 
 ======
 
