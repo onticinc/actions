@@ -16,8 +16,8 @@
 
 ## 3. Update Site info 
 
-    1. Title and Description on index.html.
-    2. Project Name on Root level package.json
+1. Title and Description on index.html.
+2. Project Name on Root level package.json
 
 ## 4. Push changes to git. 
 
@@ -47,21 +47,23 @@ use node -v to verify install.
 https://help.ubuntu.com/community/UFW
 
 
-## 9. Create non root level user
+## 9. Create New User - Cannot be root user
 
     adduser username
 
 Set Sudo Privilages
 
-    sudo usermod -ag sudo username
+    sudo usermod -aG sudo username
     
 Switch to new User.
+
     su username
 
-## 10. Change directory
+## 10. Make New Site Folder
     
     cd /var/www/
     sudo mkdir websitename
+    
 
 
 
