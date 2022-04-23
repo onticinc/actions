@@ -68,3 +68,39 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+
+
+
+name: Test Linode cli
+on: push
+jobs:
+  job-name:
+    steps:
+    - uses: actions/checkout@master
+    - name: Setup Linode cli
+      uses: brendon1555/setup-linode-cli@master
+      with:
+        LINODE_CLI_TOKEN: ${{ secrets.LINODE_CLI_TOKEN }}
+    - run: linode-cli --help
+
+
+1. test.text hello world - create action to copy to linode. 
+2. setup commands to build file. 
+3. Setup NGINX
+
+
+1. Source
+  a. Require Reviewers before pushing to deployment
+2. Build
+  a. Compile Sources and Dependencies
+  b. Run Unit Tests
+  c. Check and Enforce Code Coverage. 90%
+3. Test Enviroment
+  a. Run Integration Tests
+4. Production Environment - 1 box
+  a. Alarms On Errors, Latency, Key Business Metrics
+  b. Bake Period - 24 hours
+    . Anomaly Detection or Error Counts + Latency Breaches
+
