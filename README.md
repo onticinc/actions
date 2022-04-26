@@ -178,10 +178,10 @@ Reboot Server
 
 # Notes
 
-### Demo Linode cli
+### Demo Linode CLI
 
 ```
-name: Test Linode cli
+name: Test Linode CLI
 on: push
 jobs:
   job-name:
@@ -203,28 +203,28 @@ jobs:
 ## Continuous Integration Steps
 
 1. Source
-  a. Require Reviewers before pushing to deployment
+  - Require Reviewers before pushing to deployment
 
 2. Build
-  a. Compile Sources and Dependencies
-  b. Run Unit Tests
-  c. Check and Enforce Code Coverage. 90%
+  - Compile Sources and Dependencies
+  - Run Unit Tests
+  - Check and Enforce Code Coverage. 90%
 
 3. Test Enviroment
-  a. Run Integration Tests
+  - Run Integration Tests
 
 4. Production Environment - 1 box = 10% of traffic. 
-  a. Alarms On Errors, Latency, Key Business Metrics
-  b. Bake Period - 24 hours
-    . Anomaly Detection or Error Counts + Latency Breaches
-  c. Canary
-    cron job triggers ever few minutes. 
+  - Alarms On Errors, Latency, Key Business Metrics
+  - Bake Period - 24 hours
+    - Anomaly Detection or Error Counts + Latency Breaches
+    - Canary... (Coal Mine. Looks for problems)
+        - cron job triggers ever few minutes. 
 
 5. Prod Environment
-  a. Alarms On Errors, Latency, Key Business Metrics
-  b. Bake Period - 24 hours
-    . Anomaly Detection or Error Counts + Latency Breaches
-  c. Canary
+  - Alarms On Errors, Latency, Key Business Metrics
+  - Bake Period - 24 hours
+    - Anomaly Detection or Error Counts + Latency Breaches
+  c. Canary... (Coal Mine, Looks for problems)
     cron job triggers ever few minutes. 
 
 
