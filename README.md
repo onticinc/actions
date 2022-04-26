@@ -178,7 +178,7 @@ Reboot Server
 
 # Notes
 
-###
+### Demo Linode cli
 
 ```
 name: Test Linode cli
@@ -194,31 +194,40 @@ jobs:
     - run: linode-cli --help
 ```
 
+## to-do
+
 1. test.text hello world - create action to copy to linode. 
 2. setup commands to build file. 
 3. Setup NGINX
 
+## Continuous Integration Steps
 
 1. Source
   a. Require Reviewers before pushing to deployment
+
 2. Build
   a. Compile Sources and Dependencies
   b. Run Unit Tests
   c. Check and Enforce Code Coverage. 90%
+
 3. Test Enviroment
   a. Run Integration Tests
+
 4. Production Environment - 1 box = 10% of traffic. 
   a. Alarms On Errors, Latency, Key Business Metrics
   b. Bake Period - 24 hours
     . Anomaly Detection or Error Counts + Latency Breaches
   c. Canary
     cron job triggers ever few minutes. 
+
 5. Prod Environment
   a. Alarms On Errors, Latency, Key Business Metrics
   b. Bake Period - 24 hours
     . Anomaly Detection or Error Counts + Latency Breaches
   c. Canary
     cron job triggers ever few minutes. 
+
+
 
 
 
